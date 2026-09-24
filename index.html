@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente D'article En Ligne</title>
+    <link rel="stylesheet" href="FILE.CSS">
+</head>
+<body>
+    <h1>inscription en ligne</h1>
+    <main> <br>
+        <form action="method" method="">
+        <div class="form nom">
+                 <label for="nom">nom</label>   
+         <input id="nom" type="text" name="nom" placeholder="nom" autocomplete="nom" minlength="2" maxlength="100">  
+        </div>
+<br>
+         <div class="form email">
+                 <label for="email">EMAIL</label>   
+         <input id="email" type="email" name="email" placeholder="EMAIL" autocomplete="email" minlength="10" maxlength="100">  
+        </div>
+        <br>
+         <div class="form tel">
+                 <label for="tel">TELEPHONE</label>   
+         <input id="tel" type="tel" name="tel" placeholder="TELEPHONE" autocomplete="tel" minlength="10" maxlength="100">  
+        </div>
+
+       <br> <div class="form niveau">
+            <label for="niveau">niveau</label>
+            <select id="niveau" name="niveau">
+                <option value="debutant">Débutant</option>
+                <option value="intermediaire">Intermédiaire</option>
+                <option value="avance">Avancé</option>
+            </select>
+            
+        </div>
+        
+         <div class="form file">
+                 <label for="file">fichier</label>   
+         <input id="file" type="file" name="file" prequired>  
+        </div> <br>
+        <fieldset>
+            <legend>horaire</legend>
+            
+            <label for="horaire" class=""mode>
+            <input type="radio" id="horaire" name="mode" value="matin">Matin
+            </label><br>
+           
+            
+            <label for="horaire" class=""mode>
+            <input type="radio" id="horaire" name="mode" value="soir">Soir
+            </label>
+            
+        </fieldset><br>
+
+        <div class="champs">
+            <label for="message"> message</label>
+            <textarea id="message" name="message" placeholder="message" autocomplete="message" minlength="10" maxlength="200"></textarea>
+        </div>
+         <button type="submit">valider</button>
+
+
+
+
+
+        </form> 
+    </main>
+    
+</body>
+</html>
