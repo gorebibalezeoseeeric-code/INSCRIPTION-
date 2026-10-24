@@ -1,70 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vente D'article En Ligne</title>
-    <link rel="stylesheet" href="FILE.CSS">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="Poulet de la Marahoué : poulets de chair disponibles frais ou congelés, de 3 000 à 5 000 FCFA. Choisissez votre produit et commandez sur WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CI">
+  <meta property="og:title" content="Poulet de la Marahoué — Du poulet de qualité à prix accessible">
+  <meta property="og:description" content="Poulets de chair disponibles frais ou congelés, de 3 000 à 5 000 FCFA. Commande directe sur WhatsApp.">
+  <title>Poulet de la Marahoué — Poulets frais ou congelés</title>
+  <link rel="icon" type="image/svg+xml" href="poulet-favicon.svg">
+  <link rel="stylesheet" href="poulet.css">
+  <script src="poulet.js" defer></script>
 </head>
 <body>
-    <h1>inscription en ligne</h1>
-    <main> <br>
-        <form action="method" method="">
-        <div class="form nom">
-                 <label for="nom">nom</label>   
-         <input id="nom" type="text" name="nom" placeholder="nom" autocomplete="nom" minlength="2" maxlength="100">  
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="announcement">
+    <span class="announcement-dot" aria-hidden="true"></span>
+    Poulets de chair · Frais ou congelés · 3 000 à 5 000 FCFA
+    <a href="#commande">Commander <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Poulet de la Marahoué, accueil">
+        <span class="brand-mark" aria-hidden="true">PM</span>
+        <span class="brand-name">Poulet de la <strong>Marahoué</strong></span>
+      </a>
+      <span class="header-credit">Site réalisé par <strong>OSAFFICHE-Dev</strong></span>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="primary-navigation">
+        <a href="#accueil">Accueil</a>
+        <a href="#poulets">Nos poulets</a>
+        <a href="#prix">Prix</a>
+        <a href="#engagements">Pourquoi nous choisir</a>
+        <a href="#commande">Commande</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-small button-green" href="#commande">Commander <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero section-wrap" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">✳</span> Poulets de chair <span class="eyebrow-divider">/</span> Marahoué</p>
+        <h1 id="hero-title">Du poulet de qualité à un <em>prix accessible.</em></h1>
+        <p class="hero-intro">Poulets de chair disponibles frais ou congelés, de 3 000 FCFA à 5 000 FCFA selon le produit choisi.</p>
+        <div class="hero-price"><span>Nos prix</span><strong>3 000 <i>→</i> 5 000 <small>FCFA</small></strong></div>
+        <div class="hero-actions">
+          <a class="button button-green" href="#poulets">Voir les poulets <span aria-hidden="true">↓</span></a>
+          <a class="button button-outline" href="#commande" data-whatsapp-link>Commander sur WhatsApp <span aria-hidden="true">↗</span></a>
         </div>
-<br>
-         <div class="form email">
-                 <label for="email">EMAIL</label>   
-         <input id="email" type="email" name="email" placeholder="EMAIL" autocomplete="email" minlength="10" maxlength="100">  
+        <div class="hero-assurance"><span>✓</span> Disponible en frais ou en congelé</div>
+      </div>
+      <div class="hero-photo-wrap reveal">
+        <!-- Remplacez cette photo par une autre photo de poulet du dossier images si besoin. -->
+        <img class="hero-photo" src="images/poulet.webp" alt="Poulet préparé, photo de la collection Poulet de la Marahoué" fetchpriority="high" width="260" height="260">
+        <div class="photo-label"><span class="photo-label-icon" aria-hidden="true">✳</span><span><strong>Selon votre préférence</strong><small>Frais · Congelé</small></span></div>
+        <span class="hero-side-note" aria-hidden="true">POULETS DE CHAIR</span>
+      </div>
+      <a class="hero-scroll" href="#poulets"><span></span> Découvrir nos produits</a>
+    </section>
+
+    <section class="quick-facts" aria-label="Informations essentielles">
+      <div class="section-wrap facts-inner">
+        <div><span class="fact-icon" aria-hidden="true">✳</span><span><strong>Frais ou congelé</strong><small>Selon votre préférence</small></span></div>
+        <div><span class="fact-icon" aria-hidden="true">₣</span><span><strong>3 000 à 5 000 FCFA</strong><small>Selon le produit choisi</small></span></div>
+        <div><span class="fact-icon" aria-hidden="true">↗</span><span><strong>Commande directe</strong><small>Écrivez-nous sur WhatsApp</small></span></div>
+      </div>
+    </section>
+
+    <section class="products-section section-wrap section-pad" id="poulets" aria-labelledby="products-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> Notre sélection</p><h2 id="products-title">Découvrez nos <em>poulets.</em></h2></div>
+        <p class="section-aside">Choisissez le produit qui vous intéresse, puis contactez-nous pour confirmer sa disponibilité et son prix.</p>
+      </div>
+
+      <!-- Les prix indiqués sont ceux fournis. Modifiez les photos, les noms et les descriptions avec les informations de l'activité. -->
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <button class="product-photo image-open" type="button" data-image="images/poulet2.jfif" data-alt="Photo d'un poulet de chair proposé par Poulet de la Marahoué" aria-label="Agrandir la photo du poulet de chair frais">
+            <img src="images/poulet2.jfif" alt="Poulet de chair proposé par Poulet de la Marahoué" loading="lazy" width="225" height="225">
+            <span class="product-photo-tag">Frais</span><span class="zoom-icon" aria-hidden="true">↗</span>
+          </button>
+          <div class="product-info">
+            <div class="product-meta"><span>01 / Frais</span><span>Prix communiqué</span></div>
+            <h3>Poulet de chair frais</h3>
+            <p>Poulet de chair disponible en frais. Contactez-nous pour confirmer la disponibilité.</p>
+            <div class="product-bottom"><strong>À partir de 3 000 <small>FCFA</small></strong><a class="product-order" href="#commande" data-product="Poulet de chair frais">Commander <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <button class="product-photo image-open" type="button" data-image="images/POULET3.jfif" data-alt="Photo d'un poulet de chair disponible en congelé" aria-label="Agrandir la photo du poulet de chair congelé">
+            <img src="images/POULET3.jfif" alt="Poulet de chair, photo du produit disponible en congelé" loading="lazy" width="264" height="264">
+            <span class="product-photo-tag">Congelé</span><span class="zoom-icon" aria-hidden="true">↗</span>
+          </button>
+          <div class="product-info">
+            <div class="product-meta"><span>02 / Congelé</span><span>Prix communiqué</span></div>
+            <h3>Poulet de chair congelé</h3>
+            <p>Disponible en congelé. Écrivez-nous pour vérifier la disponibilité du produit.</p>
+            <div class="product-bottom"><strong>À partir de 3 000 <small>FCFA</small></strong><a class="product-order" href="#commande" data-product="Poulet de chair congelé">Commander <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <button class="product-photo image-open" type="button" data-image="images/POULET4.jfif" data-alt="Photo d'un poulet de chair de la gamme de prix supérieure" aria-label="Agrandir la photo du poulet de chair, gamme supérieure">
+            <img src="images/POULET4.jfif" alt="Poulet de chair, photo de la gamme de prix supérieure" loading="lazy" width="264" height="264">
+            <span class="product-photo-tag">Selon disponibilité</span><span class="zoom-icon" aria-hidden="true">↗</span>
+          </button>
+          <div class="product-info">
+            <div class="product-meta"><span>03 / Gamme supérieure</span><span>Catégorie à confirmer</span></div>
+            <h3>Poulet de chair — gamme supérieure</h3>
+            <p>Prix et catégorie à confirmer directement selon le produit choisi.</p>
+            <div class="product-bottom"><strong>Jusqu'à 5 000 <small>FCFA</small></strong><a class="product-order" href="#commande" data-product="Poulet de chair — gamme supérieure">Commander <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </div>
+      <p class="products-note"><span aria-hidden="true">✳</span> Les prix peuvent varier selon le produit choisi. Confirmez le prix et la disponibilité lors de votre commande.</p>
+    </section>
+
+    <section class="price-section section-pad" id="prix" aria-labelledby="price-title">
+      <div class="price-inner section-wrap">
+        <div class="price-copy reveal"><p class="eyebrow"><span class="eyebrow-mark">✳</span> Une gamme claire</p><h2 id="price-title">Des prix adaptés <em>à vos besoins.</em></h2><p>Les poulets sont proposés dans une gamme de prix allant de 3 000 FCFA à 5 000 FCFA, selon le produit choisi. Contactez-nous pour connaître le prix exact et la disponibilité.</p><a class="button button-cream" href="#commande">Choisir mon produit <span aria-hidden="true">→</span></a></div>
+        <div class="price-card reveal"><span class="price-card-label">GAMME DE PRIX COMMUNIQUÉE</span><div class="price-range"><span>3 000</span><i aria-hidden="true"></i><span>5 000</span></div><div class="price-currency">FCFA <span>→</span> FCFA</div><div class="price-rule"></div><div class="price-foot"><span><i></i> Frais</span><span><i></i> Congelé</span><span>Prix selon le produit</span></div></div>
+      </div>
+    </section>
+
+    <section class="format-section section-wrap section-pad" aria-labelledby="format-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> À vous de choisir</p><h2 id="format-title">Disponible selon <em>votre préférence.</em></h2></div>
+        <p class="section-aside">Frais ou congelé : indiquez le format souhaité dans votre demande. La disponibilité est à confirmer.</p>
+      </div>
+      <div class="format-grid">
+        <article class="format-card format-fresh reveal"><div class="format-top"><span>OPTION 01</span><span class="format-icon" aria-hidden="true">✳</span></div><h3>Frais</h3><p>Poulets disponibles frais pour vos besoins.</p><a href="#commande" data-format="Frais">Choisir cette option <span>→</span></a></article>
+        <article class="format-card format-frozen reveal"><div class="format-top"><span>OPTION 02</span><span class="format-icon" aria-hidden="true">❄</span></div><h3>Congelé</h3><p>Poulets disponibles également en congelé.</p><a href="#commande" data-format="Congelé">Choisir cette option <span>→</span></a></article>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" aria-labelledby="gallery-title">
+      <div class="section-wrap">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> En images</p><h2 id="gallery-title">Nos <em>produits.</em></h2></div>
+          <p class="section-aside">Touchez une photo pour l’agrandir.</p>
         </div>
-        <br>
-         <div class="form tel">
-                 <label for="tel">TELEPHONE</label>   
-         <input id="tel" type="tel" name="tel" placeholder="TELEPHONE" autocomplete="tel" minlength="10" maxlength="100">  
+        <div class="gallery-grid">
+          <button class="gallery-tile gallery-large image-open reveal" type="button" data-image="images/poulet.webp" data-alt="Poulet préparé, photo de la collection" aria-label="Agrandir la photo du poulet préparé"><img src="images/poulet.webp" alt="Poulet préparé, photo de la collection Poulet de la Marahoué" loading="lazy" width="260" height="260"><span>Photo de la collection <b>↗</b></span></button>
+          <button class="gallery-tile image-open reveal" type="button" data-image="images/POULET5.jfif" data-alt="Photo de poulets proposés" aria-label="Agrandir la photo du produit"><img src="images/POULET5.jfif" alt="Photo d'un poulet proposé" loading="lazy" width="264" height="264"><span>Découvrir le produit <b>↗</b></span></button>
+          <button class="gallery-tile image-open reveal" type="button" data-image="images/POULET6.jfif" data-alt="Photo supplémentaire de poulet" aria-label="Agrandir la photo du produit"><img src="images/POULET6.jfif" alt="Photo supplémentaire d'un poulet" loading="lazy" width="264" height="264"><span>Voir le produit <b>↗</b></span></button>
         </div>
+      </div>
+    </section>
 
-       <br> <div class="form niveau">
-            <label for="niveau">niveau</label>
-            <select id="niveau" name="niveau">
-                <option value="debutant">Débutant</option>
-                <option value="intermediaire">Intermédiaire</option>
-                <option value="avance">Avancé</option>
-            </select>
-            
-        </div>
-        
-         <div class="form file">
-                 <label for="file">fichier</label>   
-         <input id="file" type="file" name="file" prequired>  
-        </div> <br>
-        <fieldset>
-            <legend>horaire</legend>
-            
-            <label for="horaire" class=""mode>
-            <input type="radio" id="horaire" name="mode" value="matin">Matin
-            </label><br>
-           
-            
-            <label for="horaire" class=""mode>
-            <input type="radio" id="horaire" name="mode" value="soir">Soir
-            </label>
-            
-        </fieldset><br>
+    <section class="reasons-section section-wrap section-pad" id="engagements" aria-labelledby="reasons-title">
+      <div class="section-kicker reveal"><span>À VOTRE ÉCOUTE</span><span class="kicker-line"></span></div>
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-mark">✳</span> Simplement</p><h2 id="reasons-title">Pourquoi choisir <em>nos poulets ?</em></h2></div><p class="section-aside">Les informations utiles pour choisir et passer commande en toute simplicité.</p></div>
+      <div class="reasons-grid">
+        <article class="reason-card reveal"><span class="reason-icon" aria-hidden="true">◇</span><span class="reason-index">01</span><h3>Qualité</h3><p>Nous accordons une attention particulière à la qualité des produits proposés.</p></article>
+        <article class="reason-card reveal"><span class="reason-icon" aria-hidden="true">₣</span><span class="reason-index">02</span><h3>Prix accessibles</h3><p>Des poulets proposés dans une gamme de prix de 3 000 à 5 000 FCFA.</p></article>
+        <article class="reason-card reveal"><span class="reason-icon" aria-hidden="true">✳</span><span class="reason-index">03</span><h3>Le choix</h3><p>Disponibles en frais ou en congelé selon les disponibilités.</p></article>
+        <article class="reason-card reveal"><span class="reason-icon" aria-hidden="true">↗</span><span class="reason-index">04</span><h3>Commande facile</h3><p>Passez votre commande rapidement depuis WhatsApp.</p></article>
+      </div>
+    </section>
 
-        <div class="champs">
-            <label for="message"> message</label>
-            <textarea id="message" name="message" placeholder="message" autocomplete="message" minlength="10" maxlength="200"></textarea>
-        </div>
-         <button type="submit">valider</button>
+    <section class="occasions-section section-pad">
+      <div class="section-wrap occasions-inner reveal">
+        <div class="occasion-icon" aria-hidden="true">✳</div>
+        <div><p class="eyebrow">Pour vos besoins</p><h2>Un repas en famille, une cérémonie ou un <em>événement ?</em></h2><p>Que vous achetiez pour votre famille, une cérémonie, un restaurant ou un événement, contactez-nous pour connaître les disponibilités et les conditions de commande.</p></div>
+        <a class="button button-cream" href="#commande">Faire une demande <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
+    <section class="order-section section-pad" id="commande" aria-labelledby="order-title">
+      <div class="order-layout section-wrap">
+        <div class="order-copy reveal"><div class="section-kicker"><span>VOTRE COMMANDE</span><span class="kicker-line"></span></div><p class="eyebrow"><span class="eyebrow-mark">✳</span> Simple et direct</p><h2 id="order-title">Passez votre <em>commande.</em></h2><p>Pour vérifier la disponibilité et le prix exact, contactez-nous directement sur WhatsApp.</p></div>
+        <a class="button button-green order-whatsapp reveal" href="#contact" data-whatsapp-link>Commander sur WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
 
+    <section class="contact-section section-wrap section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card reveal">
+        <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> Contact</p><h2 id="contact-title">Une question ? <em>Écrivez-nous.</em></h2><p>Contactez-nous pour en savoir plus sur les produits, les prix et les disponibilités.</p></div>
+        <div class="contact-actions"><a class="button button-green" href="#contact" data-whatsapp-link>Nous contacter sur WhatsApp <span aria-hidden="true">↗</span></a><a class="contact-phone" href="#contact" data-phone>Numéro à renseigner</a><span class="contact-location" data-location hidden></span></div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="footer-main section-wrap">
+      <div><a class="brand footer-brand" href="#accueil"><span class="brand-mark" aria-hidden="true">PM</span><span class="brand-name">Poulet de la <strong>Marahoué</strong></span></a><p class="footer-promise">Vente de poulets de chair — frais et congelés</p><p class="footer-credit">Site réalisé par <strong>OSAFFICHE-Dev</strong></p><a class="footer-whatsapp" href="#contact" data-whatsapp-link>Nous contacter sur WhatsApp ↗</a></div>
+      <div class="footer-nav"><h2>Navigation</h2><a href="#accueil">Accueil</a><a href="#poulets">Nos poulets</a><a href="#prix">Prix</a><a href="#commande">Commande</a><a href="#contact">Contact</a></div>
+      <div class="footer-contact"><h2>Nous contacter</h2><a href="#contact" data-whatsapp-link>WhatsApp <span aria-hidden="true">↗</span></a><a href="#contact" data-phone>Numéro à renseigner</a><span data-footer-location hidden></span><span data-hours hidden></span></div>
+    </div>
+    <div class="footer-bottom section-wrap"><span>© <span data-year>2026</span> Poulet de la Marahoué. Tous droits réservés.</span><a href="#accueil">Retour en haut ↑</a></div>
+  </footer>
 
+  <a class="floating-whatsapp" href="#contact" data-whatsapp-link aria-label="Commander sur WhatsApp"><span class="whatsapp-glyph" aria-hidden="true">W</span><span>Commander</span><span aria-hidden="true">↗</span></a>
 
-        </form> 
-    </main>
-    
+  <dialog class="image-dialog" aria-label="Photo du produit agrandie">
+    <button class="dialog-close" type="button" aria-label="Fermer l’image">×</button>
+    <img src="" alt="">
+  </dialog>
 </body>
 </html>
