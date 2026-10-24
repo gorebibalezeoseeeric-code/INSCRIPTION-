@@ -143,6 +143,7 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .skill-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 22px 0 0 44px; }
 .skill-tag { display: inline-flex; align-items: center; gap: 7px; padding: 6px 9px; border: 1px solid rgba(229, 235, 218, .12); border-radius: 2px; color: #c9cdc3; font-size: 9px; }
 .skill-tag b { color: var(--accent); font-family: Consolas, monospace; font-size: 9px; font-weight: 500; }
+.language-logo { display: block; width: 18px; height: 18px; flex: 0 0 auto; }
 .skill-tag-muted { border-style: dashed; color: #959b8d; }
 
 .projects-section { padding-top: 105px; }
@@ -207,7 +208,8 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .project-info h3 { margin: 0 0 8px; font-size: 20px; font-weight: 560; letter-spacing: -.6px; }
 .project-info > p { min-height: 57px; margin-bottom: 13px; color: var(--muted); font-size: 10px; line-height: 1.8; }
 .project-stack { display: flex; flex-wrap: wrap; gap: 6px; }
-.project-stack span { padding: 4px 7px; border: 1px solid var(--line); color: #bbc1b3; font-size: 8px; }
+.project-stack span { display: inline-flex; align-items: center; gap: 5px; padding: 4px 7px; border: 1px solid var(--line); color: #bbc1b3; font-size: 8px; }
+.project-stack .language-logo { width: 15px; height: 15px; }
 .project-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 15px; padding-top: 12px; border-top: 1px solid var(--line); }
 .project-link { display: inline-flex; align-items: center; gap: 9px; color: var(--accent); font-size: 10px; font-weight: 600; }
 .project-link span { transition: transform .2s ease; }
