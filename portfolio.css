@@ -144,6 +144,8 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .skill-tag { display: inline-flex; align-items: center; gap: 7px; padding: 6px 9px; border: 1px solid rgba(229, 235, 218, .12); border-radius: 2px; color: #c9cdc3; font-size: 9px; }
 .skill-tag b { color: var(--accent); font-family: Consolas, monospace; font-size: 9px; font-weight: 500; }
 .language-logo { display: block; width: 18px; height: 18px; flex: 0 0 auto; }
+.tool-logo { display: block; width: 18px; height: 18px; flex: 0 0 auto; }
+.tool-logo-github { color: #fff; }
 .skill-tag-muted { border-style: dashed; color: #959b8d; }
 
 .projects-section { padding-top: 105px; }
