@@ -227,6 +227,9 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .process-step:hover { background: rgba(195, 243, 107, .035); }
 .process-number { position: absolute; top: 17px; right: 16px; color: #697064; font-family: Consolas, monospace; font-size: 9px; }
 .process-icon { display: grid; width: 34px; height: 34px; margin-bottom: 18px; place-items: center; border: 1px solid rgba(195, 243, 107, .25); color: var(--accent); font-family: Consolas, monospace; font-size: 12px; }
+.process-step:nth-child(4n + 2) .process-icon { border-color: rgba(122, 174, 255, .35); background: rgba(122, 174, 255, .07); color: #7aaeff; }
+.process-step:nth-child(4n + 3) .process-icon { border-color: rgba(185, 154, 255, .35); background: rgba(185, 154, 255, .07); color: #b99aff; }
+.process-step:nth-child(4n + 4) .process-icon { border-color: rgba(255, 157, 122, .35); background: rgba(255, 157, 122, .07); color: #ff9d7a; }
 .process-step h3 { margin-bottom: 6px; font-size: 12px; font-weight: 600; }
 .process-step p { max-width: 190px; margin: 0; color: var(--muted); font-size: 9px; line-height: 1.8; }
 
@@ -245,6 +248,8 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .flow-icon { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid rgba(195, 243, 107, .25); border-radius: 50%; color: var(--accent); font-family: Consolas, monospace; font-size: 11px; }
 .flow-icon-github { color: #fff; }
 .flow-icon-github svg { display: block; width: 19px; height: 19px; }
+.deployment-flow .flow-node:nth-of-type(3) .flow-icon { border-color: rgba(122, 174, 255, .4); background: rgba(122, 174, 255, .08); color: #7aaeff; }
+.deployment-flow .flow-node:nth-of-type(4) .flow-icon { border-color: rgba(185, 154, 255, .4); background: rgba(185, 154, 255, .08); color: #b99aff; }
 .flow-arrow { color: #73796c; font-size: 15px; }
 .flow-node-live .flow-icon { border-color: rgba(195, 243, 107, .6); background: var(--accent-soft); }
 .hosting-footnote { display: flex; align-items: center; gap: 12px; margin: 14px 0 0; color: var(--subtle); font-size: 8px; }
@@ -254,6 +259,8 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .service-card { position: relative; display: flex; min-height: 227px; flex-direction: column; align-items: flex-start; padding: 19px; border: 1px solid var(--line); background: rgba(255, 255, 255, .012); transition: transform .2s ease, border-color .2s ease, background-color .2s ease; }
 .service-card:hover { transform: translateY(-3px); border-color: rgba(195, 243, 107, .35); background: rgba(255, 255, 255, .022); }
 .service-icon { display: grid; width: 32px; height: 32px; margin-bottom: 15px; place-items: center; border: 1px solid rgba(195, 243, 107, .27); color: var(--accent); font-family: Consolas, monospace; font-size: 12px; }
+.service-card:nth-child(3n + 2) .service-icon { border-color: rgba(255, 157, 122, .35); background: rgba(255, 157, 122, .07); color: #ff9d7a; }
+.service-card:nth-child(3n) .service-icon { border-color: rgba(122, 174, 255, .35); background: rgba(122, 174, 255, .07); color: #7aaeff; }
 .service-index { position: absolute; top: 22px; right: 17px; color: var(--subtle); font-size: 7px; letter-spacing: .9px; }
 .service-card h3 { margin-bottom: 8px; font-size: 13px; font-weight: 600; }
 .service-card p { flex: 1; margin-bottom: 16px; color: var(--muted); font-size: 9px; line-height: 1.85; }
@@ -270,6 +277,9 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .approach-list { margin: 0; padding: 0; list-style: none; }
 .approach-list li { display: grid; grid-template-columns: 33px 1fr 18px; align-items: start; gap: 13px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .approach-list li > span { padding-top: 2px; color: var(--accent); font-family: Consolas, monospace; font-size: 9px; }
+.approach-list li:nth-child(4n + 2) > span { color: #7aaeff; }
+.approach-list li:nth-child(4n + 3) > span { color: #b99aff; }
+.approach-list li:nth-child(4n + 4) > span { color: #ff9d7a; }
 .approach-list strong { font-size: 11px; font-weight: 600; }
 .approach-list p { margin: 4px 0 0; color: var(--muted); font-size: 9px; }
 .approach-list li > b { color: var(--subtle); font-size: 12px; font-weight: 400; }
@@ -283,6 +293,7 @@ h2 { margin-bottom: 0; font-size: clamp(36px, 4.5vw, 56px); font-weight: 620; le
 .contact-methods { display: flex; flex-direction: column; gap: 13px; }
 .contact-method { display: flex; align-items: center; gap: 12px; }
 .method-icon { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid var(--line); color: var(--accent); }
+.contact-method:nth-child(2) .method-icon { border-color: rgba(83, 219, 151, .3); background: rgba(83, 219, 151, .07); color: #53db97; }
 .contact-method small { display: block; margin-bottom: 2px; color: var(--subtle); font-size: 8px; }
 .contact-method a { color: #d8dcd2; font-size: 10px; }
 .contact-method a:hover { color: var(--accent); }
